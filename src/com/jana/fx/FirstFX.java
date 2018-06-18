@@ -16,7 +16,6 @@ public class FirstFX extends Application{
 	
 	Label lb_text;
 	Button btn_one;
-	//cvcvd
 	
 	public static void main(String[] args) {
 		
@@ -32,7 +31,7 @@ public class FirstFX extends Application{
 		lb_text = new Label("Here I am..");
 		btn_one = new Button("Click Me");
 		
-	
+		lb_text.getStyleClass().add("lbl_mycontrol_label");
 		
 		btn_one.setOnAction(new EventHandler<ActionEvent>() {
 			
@@ -50,7 +49,13 @@ public class FirstFX extends Application{
 		root.getChildren().addAll(lb_text, btn_one);
 		Scene scene = new Scene(root,500, 500);
 		
+		
+		
 		stage.setScene(scene);
+		
+		scene.getStylesheets().add("com/jana/fx/style/style.css");
+		
+		
 		stage.show();
 		
 	}

@@ -1,0 +1,28 @@
+.root {
+	-fx-spacing: 15px;
+	-fx-background-color: #808080;
+	-fx-padding: 10;
+}
+
+.button {
+	-fx-background-color: #4CAF50; /* Green */
+	-fx-text-fill: white;
+	-fx-padding: 16px 32px;
+	-fx-text-align: center;
+	-fx-text-decoration: none;
+	-fx-display: inline-block;
+	-fx-font-size: 16px;
+	-fx-margin: 4px 2px;
+	-fx-transition-duration: 0.4s;
+}
+
+.button:hover {
+	-fx-background-color: white;
+	-fx-text-fill: black;
+}
+
+.lbl_mycontrol_label{
+	
+	-fx-font-size: 40px;
+	-fx-fill-color: black;
+}
