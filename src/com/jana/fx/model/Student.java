@@ -9,15 +9,17 @@ import javafx.scene.control.cell.PropertyValueFactory;
 
 public class Student {
 	
-	private String name, address, telno;
+	private String name, address, telno, desc;
 	private Date dob;
 	
-	public Student(String name, String address, String telno, Date dob){
+	public Student(String name, String address, String telno, Date dob, String desc){
 		
 		this.name = name;
 		this.address = address;
 		this.telno = telno;
 		this.dob = dob;
+		this.desc = desc;
+		
 	}
 
 	public String getName() {
@@ -52,7 +54,25 @@ public class Student {
 	public void setDob(Date dob) {
 		this.dob = dob;
 	}
+	
+	
 
+	public String getDesc() {
+		return desc;
+	}
+
+	public void setDesc(String desc) {
+		this.desc = desc;
+	}
+
+	
+	
+	@Override
+	public String toString(){
+		
+		return name;
+	}
+	
 	public static ArrayList<TableColumn<Student, ?>> getColumn(TableView table){
 		
 		int i = 0;

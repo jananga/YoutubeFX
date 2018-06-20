@@ -42,6 +42,7 @@ public class TableViewTest extends Application {
 						System.out.println("Address is : "+table.getSelectionModel().getSelectedItem().getAddress());
 						System.out.println("Telno is : "+table.getSelectionModel().getSelectedItem().getTelno());
 						System.out.println("DOB is : "+table.getSelectionModel().getSelectedItem().getDob().toString());
+						System.out.println("Desc is : "+table.getSelectionModel().getSelectedItem().getDesc().toString());
 
 					}
 				}
@@ -70,10 +71,10 @@ public class TableViewTest extends Application {
 
 		ObservableList<Student> ol = FXCollections.observableArrayList();
 
-		ol.add(new Student("jananga", "Station Road Kandana", "0774424059", new Date()));
-		ol.add(new Student("jananga", "Station Road Kandana", "0774424059", new Date()));
+		ol.add(new Student("jananga", "Station Road Kandana", "0774424059", new Date(), "Test Field One"));
+		ol.add(new Student("jananga", "Station Road Kandana", "0774424059", new Date(), "Test Field Two"));
 
-		ol.add(new Student("jananga", "Station Road Kandana", "0774424059", new Date()));
+		ol.add(new Student("jananga", "Station Road Kandana", "0774424059", new Date(), "Test Field Three"));
 
 		return ol;
 	}
